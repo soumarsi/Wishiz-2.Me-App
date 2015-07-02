@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileViewTableCell" rowHeight="529" id="KGk-i7-Jjw" customClass="ProfileViewTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="529"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="27" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXI-Ow-GuX" userLabel="lblNameAndAge">
+                        <rect key="frame" x="0.0" y="280" width="320" height="50"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="60" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B1-HL-5cs" userLabel="txtAbout">
+                        <rect key="frame" x="8" y="370" width="304" height="102"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RzK-Cs-xBj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="281"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="qiX-E7-c45"/>
+                        </connections>
+                    </scrollView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Fund My Wishiz!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qr-65-3DN">
+                        <rect key="frame" x="0.0" y="480" width="320" height="48"/>
+                        <color key="backgroundColor" red="0.14901961389999999" green="0.7019608021" blue="0.59215688710000003" alpha="1" colorSpace="deviceRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="23" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GW2-5y-08q" userLabel="lblCItyAndState">
+                        <rect key="frame" x="0.0" y="330" width="320" height="32"/>
+                        <color key="backgroundColor" red="0.78431379800000001" green="0.94117653369999998" blue="0.79215693470000004" alpha="1" colorSpace="deviceRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fundWishizTitle" destination="5Qr-65-3DN" id="3dM-Cu-In6"/>
+                <outlet property="lblCityAndState" destination="GW2-5y-08q" id="ovh-wO-4jb"/>
+                <outlet property="lblNameAndAge" destination="IXI-Ow-GuX" id="d3H-zl-YVh"/>
+                <outlet property="scrImage" destination="RzK-Cs-xBj" id="pLx-Gg-xN8"/>
+                <outlet property="txtAbout" destination="9B1-HL-5cs" id="4Ac-4k-MOQ"/>
+            </connections>
+            <point key="canvasLocation" x="330" y="534.5"/>
+        </tableViewCell>
+    </objects>
+</document>
